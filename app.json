@@ -1,0 +1,17 @@
+{
+  "pages": [
+  
+    "pages/boot/boot",
+    "pages/play/play",
+    "pages/win/win",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "听歌识曲地1首",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

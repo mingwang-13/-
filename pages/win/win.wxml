@@ -1,0 +1,5 @@
+
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" wx:if="{{show}}">恭喜通关 点击获取证书</button>
+<image src="/image/win.jpg"></image>
+<image src="{{url}}" class="headimg" background-size="cover"></image>
+<view class="zs"></view>

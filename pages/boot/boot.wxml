@@ -1,0 +1,2 @@
+<image src="../../image/boot2.png" class="myimg"></image>
+<button class="btn" bindtap="goPlay">进入游戏</button>

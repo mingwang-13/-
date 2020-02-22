@@ -1,0 +1,13 @@
+<view class="container">
+      <audio src="{{songs[nowindex].src}}" controls></audio>
+      <view>
+            <input type="text" wx:for="{{count}}" class="name" disabled="true" bindtap="cleartxt" id="{{index}}" value="{{title[index]}}"/>
+      </view>  
+      <view class="content">
+            <view bindtap="getitem" wx:for="{{songs[nowindex].keyword}}" id="{{index}}" class="btn">{{item}}</view>
+      </view> 
+      <view class="footer">
+            <text class="tip">太难搞不定？邀请好友试试</text>
+            <button class="sos" open-type="share">SOS</button>
+      </view>
+</view>
