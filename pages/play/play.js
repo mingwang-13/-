@@ -16,13 +16,14 @@ Page({
     this.setData({
       title : []
     })
+    console.log(11111111)
     wx.request({      
-url:"https://www.studyinghome.com/mock/5e4f79f9ca6994415ce34503/music/getsong#!method=get",
-success:res=>{
-  // console.log(res.data)
-  for(var i=0;i<res.data.data[this.data.nowindex].name.length;i++){
-    this.data.title.push("")
-  }
+        url:"http://mock.studyinghome.com/mock/5e4f79f9ca6994415ce34503/music/getsong",
+        success:res=>{
+          console.log(res.data)
+          for(var i=0;i<res.data.data[this.data.nowindex].name.length;i++){
+            this.data.title.push("")
+          }
   this.setData({
     songs: res.data.data,
     count:res.data.data[this.data.nowindex].name.length
@@ -103,7 +104,7 @@ success:res=>{
         wx.getStorage({
           key: 'isShow',
           success:res =>{
-               this.init(); 
+             this.init(); 
           },
           fail:function(res){
             wx.redirectTo({
